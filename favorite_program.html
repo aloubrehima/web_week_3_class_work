@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Favorite Program</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="favorite-program.css">
+    <title>To-Do List Manager</title>
+  </head>
+  <body class="m-5">
+
+
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Rock-Paper-Scissors</h1>
+      <p class="lead">This program plays a game called Rock Paper Scissors. </p>
+    </div>
+
+    <div class="col-lg-5">
+      <p>You play against the computer, at each game you either win, lose,
+        or tie if the computer chooses the same choice like you. You will be able to see the score after each game.</p>
+      <h3 class="my-5">Code Samples:</h3>
+      <pre>
+<code>
+# Display what the player chose:
+if personchoice == 'r':
+    print('ROCK versus...')
+elif personchoice == 'p':
+    print('PAPER versus...')
+elif personchoice == 's':
+    print('SCISSORS versus...')
+
+
+# Display what the computer chose:
+randomNumber = random.randint(1, 3)
+if randomNumber == 1:
+    computer_choice = 'r'
+    print('ROCK')
+elif randomNumber == 2:
+    computer_choice = 'p'
+    print('PAPER')
+elif randomNumber == 3:
+    computer_choice = 's'
+    print('SCISSORS')
+
+
+# Display and record the win/loss/tie:
+if personchoice == computer_choice:
+    print('Both players selected. It is a tie!')
+    ties = ties + 1
+elif personchoice == 'r' and computer_choice == 's':
+    print('Rock smashes scissors. You win!')
+    wins = wins + 1
+elif personchoice == 'p' and computer_choice == 'r':
+    print('Paper covers rock. You win!')
+    wins = wins + 1
+elif personchoice == 's' and computer_choice == 'p':
+    print('Scissors cuts paper. You win!')
+    wins = wins + 1
+elif personchoice == 'r' and computer_choice == 'p':
+    print('Paper covers rock. You lose!')
+    losses = losses + 1
+elif personchoice == 'p' and computer_choice == 's':
+    print('scissors cuts paper. You lose!')
+    losses = losses + 1
+elif personchoice == 's' and computer_choice == 'r':
+    print('rock smashes scissors. You lose!')
+    losses = losses + 1
+
+    <img src="program_image.png" alt="Program Screenshots" title="Rock-Paper-Scissors" height="400"> 
+
+    <img src="program_image2.png" alt="Program Screenshots" title="Rock-Paper-Scissors" height="400">
+
+</code>
+      </pre>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+.jumbotron {
+    background-color: rgba(255, 166, 0, 0.968);
+    color: wheat;
+    font-family: 'Lora', serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
